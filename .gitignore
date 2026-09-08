@@ -1,0 +1,13 @@
+node_modules/
+calculations/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+coverage/
+*.pdf
+*.zip
+*.token
+*.pem

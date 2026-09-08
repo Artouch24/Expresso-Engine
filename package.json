@@ -1,0 +1,14 @@
+{
+  "name": "expresso-lab",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Entraîneur préflop Expresso et moteur CFR expérimental gratuit, 2 ou 3 joueurs.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node scripts/build.cjs && node tests/app.test.cjs && node tests/solver.test.cjs && node tests/worker.test.cjs",
+    "solve": "node scripts/solve.cjs",
+    "example": "node scripts/solve.cjs examples/3max-10bb.json calculations/3max-10bb.json",
+    "check:example": "node scripts/check-example.cjs"
+  }
+}
