@@ -1,4 +1,4 @@
-name: Build and tests
+name: Tests
 on:
   push:
   pull_request:
@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: '24'
-      - run: npm test
-      - run: npm run check:example
-      - name: Check committed HTML matches source
-        run: git diff --exit-code -- dist/index.html
+          python-version: '3.11'
+      - run: python -m pip install -e '.[dev]'
+      - run: pytest -q
+      - run: ruff check .
+      - run: ruff format --check .

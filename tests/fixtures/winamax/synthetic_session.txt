@@ -1,0 +1,36 @@
+# SYNTHETIC TEST DATA. No real account or hand-history information.
+[TOURNAMENT]
+TournamentId: SYNTH-T-001
+BuyInCents: 100
+RakeCents: 10
+PrizePoolCents: 300
+Multiplier: 3
+FinishingPosition: 1
+PrizeCents: 300
+Date: 2026-01-01T12:00:00+00:00
+StartingStack: 500
+HandId: SYNTH-H-001
+HandId: SYNTH-H-002
+[/TOURNAMENT]
+[HAND]
+HandId: SYNTH-H-001
+TournamentId: SYNTH-T-001
+Date: 2026-01-01T12:01:00+00:00
+Blinds: 10/20
+Player: SyntheticHero|500|BTN
+Player: SyntheticVillainA|500|SB
+Player: SyntheticVillainB|500|BB
+Action: SyntheticHero|preflop|raise|40
+Action: SyntheticVillainA|preflop|fold|0
+Action: SyntheticVillainB|preflop|call|20
+[/HAND]
+[HAND]
+HandId: SYNTH-H-002
+TournamentId: SYNTH-T-001
+Date: 2026-01-01T12:05:00+00:00
+Blinds: 15/30
+Player: SyntheticHero|600|BTN
+Player: SyntheticVillainA|400|BB
+Action: SyntheticHero|preflop|raise|60
+Action: SyntheticVillainA|preflop|fold|0
+[/HAND]
